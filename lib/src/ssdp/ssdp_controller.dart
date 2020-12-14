@@ -56,7 +56,7 @@ class SSDPController {
       InternetAddress.anyIPv4.address,
       _port,
       reuseAddress: true,
-      reusePort: true,
+      reusePort: false,
       ttl: 255,
     );
     _sockets.add(_incoming);
